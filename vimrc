@@ -21,9 +21,15 @@ set hlsearch
 colorscheme jellybeans
 let g:pydiction_location = '~/.vim/pydiction/complete-dict'
 
+
+if v:version > 700
+    set cursorline
+endif
+
+
 nmap <silent> <F2> :NERDTreeToggle<CR>
-imap <F3> <ESC>"+y<CR>
-imap <F4> <ESC>"+gP<CR>
+nmap <F3> <ESC>"+y<ESC><CR>
+nmap <F4> <ESC>"+gP<ESC><CR>
 
 
 
